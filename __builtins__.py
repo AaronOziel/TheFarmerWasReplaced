@@ -300,7 +300,7 @@ class Unlocks:
         ...
 
     @property
-    def Benchmark(self):
+    def Benchmark():
         """Functions to help measure performance."""
         ...
 

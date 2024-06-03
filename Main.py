@@ -8,4 +8,5 @@ def water_with_minimum(minimum):
         while(get_water() < 0.75):
             use_item(Items.Water_Tank)
 
-planting(plant_carrots)
+# planting(plant_trees)
+plant_pumpkins()
