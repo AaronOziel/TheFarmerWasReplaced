@@ -21,7 +21,7 @@ def plant_carrots():
     if get_ground_type() == Grounds.Turf:
         till()
     if num_items(Items.Carrot_Seed) == 0:
-        trade(Items.Carrot_Seed, 10)
+        trade(Items.Carrot_Seed, world_area)
     plant(Entities.Carrots)
 
 def plant_trees():

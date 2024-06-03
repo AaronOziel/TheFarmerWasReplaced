@@ -1,2 +1,1 @@
-while(True):
-    trade(Items.Empty_Tank)
+trade(Items.Empty_Tank, 1000)
