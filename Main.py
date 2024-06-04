@@ -1,5 +1,3 @@
-world_area = get_world_size() * get_world_size()
-
 def water():
     if get_water() < 0.5:
         while(get_water() < 0.75):
@@ -32,6 +30,3 @@ def till_field():
 
 def harvest_all():
     use_action_on_every_tile(harvest)
-
-#planting(plant_carrots)
-plant_pumpkins()

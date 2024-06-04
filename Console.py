@@ -1,1 +1,2 @@
-planting(plant_trees)
+while(True):
+    trade(Items.Empty_Tank)
