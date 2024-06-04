@@ -13,17 +13,16 @@ def planting(plant): # function
 
 def plant_grass():
     pass
-
-def plant_bushes():
-    plant(Entities.Bush)
           
 def plant_carrots():
     if get_ground_type() == Grounds.Turf:
         till()
     if num_items(Items.Carrot_Seed) == 0:
-        trade(Items.Carrot_Seed, world_area)
+        trade(Items.Carrot_Seed, get_world_size() * get_world_size())
     plant(Entities.Carrots)
 
 def plant_trees():
     if (get_pos_x() % 2 == 0 and get_pos_y() % 2 == 1) or (get_pos_x() % 2 == 1 and get_pos_y() % 2 == 0):
-        plant(Entities.Tree)      
+        plant(Entities.Tree)
+    else:
+        plant(Entities.Bush)
