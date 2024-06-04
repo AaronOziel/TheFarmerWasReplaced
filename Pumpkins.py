@@ -15,7 +15,7 @@ def plant_pumpkins():
         for i in range(get_world_size()):
             for j in range(get_world_size()):
                 if get_entity_type() != Entities.Pumpkin:
-                    trade(Items.Pumpkin_Seed, world_area - num_items(Items.Pumpkin_Seed))
+                    trade(Items.Pumpkin_Seed, 100 - num_items(Items.Pumpkin_Seed))
                     accelerated_planting(Entities.Pumpkin)
                 move(South)
             move(East)

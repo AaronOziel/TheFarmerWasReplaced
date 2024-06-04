@@ -11,7 +11,7 @@ def water_with_minimum(minimum): # minimum: float w/range 0 ~ 1
 def accelerated_planting(entity_type): # entity_type: Entities
     while not can_harvest():
         if num_items(Items.Fertilizer) == 0:
-            trade(Items.Fertilizer, world_area)
+            trade(Items.Fertilizer, 105)
         if get_entity_type() != entity_type: 
             plant(entity_type)
         use_item(Items.Fertilizer)
