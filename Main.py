@@ -32,6 +32,3 @@ def till_field():
 
 def harvest_all():
     use_action_on_every_tile(harvest)
-
-#planting(plant_carrots)
-plant_pumpkins()
