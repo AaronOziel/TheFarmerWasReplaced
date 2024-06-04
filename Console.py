@@ -1,1 +1,1 @@
-trade(Items.Empty_Tank, 1000)
+planting(plant_trees)
