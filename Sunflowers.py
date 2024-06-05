@@ -22,9 +22,12 @@ def plant_sunflowers():
     while max_petals >= 10:
         quick_move(x,y)
         harvest()
+        # Remove record of flower just harvested
         field_measurements.remove((max_petals, x, y))
+        # Replant flower and measure its petals
         trade(Items.Sunflower_Seed, 105 - num_items(Items.Sunflower_Seed))
         accelerated_planting(Entities.Sunflower)
         field_measurements.append((measure(), x, y))
+        # Find new max flower
         max_petals, x, y = max(field_measurements)
         
